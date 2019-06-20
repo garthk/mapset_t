@@ -1,5 +1,6 @@
 defmodule MapSet.TypingTest do
   use ExUnit.Case
+  import MapSet.Typing
   doctest MapSet.Typing
 
   test "PID" do

@@ -40,5 +40,5 @@ defmodule MapSet.Typing do
   def whitelisted?(_), do: false
 
   @spec whitelisted_keys() :: MapSet.t()
-  defp whitelisted_keys, do: @whitelisted_keys
+  defp whitelisted_keys, do: @whitelisted_keys |> MapSet.new()
 end

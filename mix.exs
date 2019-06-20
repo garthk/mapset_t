@@ -4,7 +4,7 @@ defmodule MapSet.Typing.MixProject do
   def project do
     [
       app: :mapset_t,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -28,7 +28,6 @@ defmodule MapSet.Typing.MixProject do
 
   defp dialyzer do
     [
-      ignore_warnings: "dialyzer.ignore-warnings",
       list_unused_filters: true,
       plt_add_apps: [:mix],
       plt_add_deps: [:app_tree]
